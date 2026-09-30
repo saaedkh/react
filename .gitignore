@@ -1,0 +1,7 @@
+node_modules/
+.vs/
+*.log
+.env
+.env.local
+build/
+dist/

@@ -1,0 +1,137 @@
+/* src/app.css */
+
+/* Global styles */
+body {
+  background-color: #f4f4f4; /* Light background color for default mode */
+  color: #333; /* Default text color */
+  font-family: 'Arial', sans-serif; /* Clean font for better readability */
+  transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition for dark mode */
+}
+
+.container {
+  padding: 20px;
+}
+
+h1 {
+  text-align: center;
+  font-size: 2.5rem;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+/* Products page specific styles */
+.products-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* 4 products per row */
+  gap: 20px; /* Space between grid items */
+}
+
+.product-card {
+  background-color: #fff; /* White background for the card */
+  border-radius: 8px; /* Rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow */
+  overflow: hidden; /* Rounded corners effect */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for hover effects */
+}
+
+.product-card:hover {
+  transform: scale(1.05); /* Slight zoom effect */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Enhanced shadow on hover */
+}
+
+.product-image {
+  width: 100%; /* Full width for image */
+  height: 200px; /* Fixed height */
+  object-fit: cover; /* Cover the area without stretching */
+  border-bottom: 1px solid #ddd; /* Subtle border */
+}
+
+.product-details {
+  padding: 15px;
+}
+
+.product-title {
+  font-size: 1.25rem; /* Larger font size for title */
+  color: #333; /* Dark text color */
+  margin-bottom: 10px;
+}
+
+.product-price {
+  font-size: 1rem; /* Standard font size for price */
+  color: #666; /* Slightly lighter color for price */
+}
+
+.button {
+  display: block;
+  width: 100%; /* Full width button */
+  padding: 10px;
+  margin-top: 10px;
+  font-size: 1rem;
+  text-align: center;
+  background-color: #007bff; /* Primary button color */
+  color: #fff; /* Text color for button */
+  border: none;
+  border-radius: 5px; /* Rounded corners */
+  cursor: pointer;
+  transition: background-color 0.3s ease; /* Smooth transition for color change */
+}
+
+.button:hover {
+  background-color: #0056b3; /* Darker color on hover */
+}
+
+.product-description {
+  display: none; /* Initially hidden */
+  margin-top: 10px;
+  font-size: 0.875rem;
+  color: #444;
+  padding-top: 10px;
+  border-top: 1px solid #ddd;
+}
+
+.show-details {
+  cursor: pointer;
+  color: #007bff;
+  font-size: 0.875rem;
+  text-decoration: underline;
+}
+
+.show-details:hover {
+  color: #0056b3;
+}
+
+/* Dark mode styles */
+.dark-mode {
+  background-color: #333; /* Dark background for dark mode */
+  color: #f4f4f4; /* Light text color */
+}
+
+.dark-mode .container {
+  background-color: #333;
+  color: #f4f4f4;
+}
+
+.dark-mode .product-card {
+  background-color: #444; /* Dark background for product card in dark mode */
+  color: #f4f4f4; /* Light text color */
+}
+
+.dark-mode .product-price {
+  color: #aaa; /* Lighter price color for dark mode */
+}
+
+.dark-mode .show-details {
+  color: #00aaff; /* Light blue color for links in dark mode */
+}
+
+.dark-mode .product-description {
+  border-top: 1px solid #555; /* Darker border for description in dark mode */
+}
+
+.dark-mode .button {
+  background-color: #0056b3; /* Darker button color for dark mode */
+}
+
+.dark-mode .button:hover {
+  background-color: #003d80; /* Even darker color on hover */
+}

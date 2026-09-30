@@ -1,0 +1,55 @@
+/* Product Card Styling */
+.product-card {
+    background-color: #ffffff; /* Default light mode background */
+    border: 1px solid #e2e8f0;
+    border-radius: 0.5rem;
+    padding: 1rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .product-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Product Name */
+  .product-card h2 {
+    color: #4a5568; /* Grey color for product name */
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+  }
+  
+  /* Product Price */
+  .product-card p {
+    color: #718096; /* Grey color for price */
+    font-size: 1rem;
+  }
+  
+  /* Description Section */
+  .description {
+    margin-top: 1rem;
+    font-size: 0.875rem;
+    line-height: 1.5;
+    color: #4a5568; /* Grey color for description text */
+  }
+  
+  /* Dark Mode Styling */
+  .dark-mode .product-card {
+    background-color: #1a202c; /* Dark mode background */
+    border: 1px solid #2d3748; /* Dark mode border */
+  }
+  
+  .dark-mode .product-card h2 {
+    color: #e2e8f0; /* Light color for product name in dark mode */
+  }
+  
+  .dark-mode .product-card p {
+    color: #edf2f7; /* Light color for price in dark mode */
+  }
+  
+  .dark-mode .description {
+    color: #e2e8f0; /* Light color for description text in dark mode */
+  }
+  
